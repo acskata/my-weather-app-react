@@ -1,0 +1,48 @@
+h1 {
+    color: #202124;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  
+  small {
+    position: relative;
+    font-size: 12px;
+    top: -25px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    color: #202124;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 19px;
+  }
+  
+  .overview {
+    margin-bottom: 20px;
+  }
+  
+  .weatherTemp img {
+    margin-right: 10px;
+    height: 64px;
+    width: 64px;
+  }
+  
+  .weatherTemp strong {
+    color: #202124;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 400;
+  }
+  
