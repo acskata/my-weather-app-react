@@ -28,9 +28,9 @@ export default function Search() {
     event.preventDefault();
     if (city.length > 0) {
       setResponse(
-        <div className="Summary">
+        <div>
           <div className="overview">
-        <h1>{city}</h1>
+        <h1 className="text-capitalize">{city}</h1>
         <ul>
           <li>Pending...</li>
           <li className="text-capitalize">{description}</li>
@@ -50,7 +50,7 @@ export default function Search() {
         </div>
         <div className="col-6">
           <ul>
-            <li>Humidity: {humidity}</li>
+            <li>Humidity: {humidity}%</li>
             <li>Wind: {wind}km/s</li>
           </ul>
         </div>
