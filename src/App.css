@@ -1,6 +1,10 @@
-.weatherApp {
+.App {
   max-width: 500px;
-  margin: 30px auto;
+  margin: 0 auto;
+}
+
+.weatherApp {
+  margin-top: 30px;
   padding: 20px;
   border: 1px solid #d9d9d9;
   border-radius: 5px;
