@@ -1,0 +1,32 @@
+small {
+    position: relative;
+    font-size: 12px;
+    top: -25px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    position: relative;
+    height: 64px;
+    width: 64px;
+  }
+  
+  strong {
+    color: #202124;
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  .temperature {
+    position: relative;
+    font-weight: 400px;
+    font-size: 48px;
+  }

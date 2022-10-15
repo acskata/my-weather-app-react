@@ -6,12 +6,6 @@ h1 {
     margin-bottom: 0;
   }
   
-  small {
-    position: relative;
-    font-size: 12px;
-    top: -25px;
-  }
-  
   a {
     text-decoration: none;
   }
@@ -27,17 +21,6 @@ h1 {
     font-size: 12px;
     font-weight: 300;
     line-height: 19px;
-  }
-  
-  img {
-    height: 64px;
-    width: 64px;
-  }
-  
-  strong {
-    color: #202124;
-    font-size: 48px;
-    font-weight: 400;
   }
 
   .overview {
