@@ -1,5 +1,5 @@
 import "./App.css";
-import Weather from "./Weather";
+import Search from "./Search";
 import Footer from "./Footer";
 
 export default function App() {
@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <div className="container">
       <div className="weatherApp">
-        <Weather defaultCity="London"/>
+        <Search defaultCity="London"/>
       </div>
       <Footer />
     </div>

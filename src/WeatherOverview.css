@@ -29,18 +29,18 @@ h1 {
     line-height: 19px;
   }
   
-  .overview {
-    margin-bottom: 20px;
-  }
-  
   img {
-    height: 80px;
-    width: 80px;
+    height: 64px;
+    width: 64px;
   }
   
   strong {
     color: #202124;
     font-size: 48px;
     font-weight: 400;
+  }
+
+  .overview {
+    margin-bottom: 20px;
   }
   
