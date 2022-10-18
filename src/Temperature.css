@@ -8,15 +8,9 @@ small {
     text-decoration: none;
   }
   
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
   img {
-    position: relative;
-    height: 64px;
-    width: 64px;
+    height: 80px;
+    width: 80px;
   }
   
   strong {

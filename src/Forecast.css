@@ -1,0 +1,26 @@
+.Forecast {
+    margin-top: 20px;
+}
+
+.Forecast h3 {
+    font-size: 14px;
+    color: #202124;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+}
+
+.Forecast img {
+    height: 36px;
+    width: 36px;
+    display: block;
+    margin: 0 auto;
+}
+
+.Forecast p {
+    text-align: center;
+    color: #202124;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 19px;
+}
