@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Forecast.css";
+import ForecastDay from "./ForecastDay";
 
 export default function Forecast(props) {
     let [completed, setCompleted] = useState(false);
     let [forecastData, setForecastData] = useState(null);
+
+    useEffect(() => {
+        setCompleted(false);
+      }, [props.coordinates]);
 
     function  handleResponse(response) {
         setForecastData(response.data.daily);
@@ -16,18 +21,28 @@ export default function Forecast(props) {
             <div className="Forecast">
                 <div className="row">
                     <div className="col">
-                        <h3>{forecastData[0].dt}</h3>
-                        <img src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png" alt="weather icon"/>
-                        <p>{forecastData[0].temp.max}°C</p>
+                        <ForecastDay data={forecastData[1]} />
+                    </div>
+                    <div className="col">
+                        <ForecastDay data={forecastData[2]} />
+                    </div>
+                    <div className="col">
+                        <ForecastDay data={forecastData[3]} />
+                    </div>
+                    <div className="col">
+                        <ForecastDay data={forecastData[4]} />
+                    </div>
+                    <div className="col">
+                        <ForecastDay data={forecastData[5]} />
                     </div>
                 </div>
             </div>
             );
     } else {
-        let apiKey = "ce144f0cf51fa43f03431f0488a36728";
+        let apiKey = "6a48a550fc04f170639e60d52b8a6bc5";
         let latitude = props.coordinates.lat;
         let longitude = props.coordinates.lon;
-        let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+        let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
         
         axios.get(apiUrl).then(handleResponse);
     
