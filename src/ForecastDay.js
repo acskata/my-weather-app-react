@@ -23,10 +23,12 @@ export default function ForecastDay(props) {
         return days[day];
     }
 
+    let iconUrl = `http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
+
     return (
         <div className="ForecastDay">
             <h3>{formatDays()}</h3>
-            <img src="https://ssl.gstatic.com/onebox/weather/48/rain.png" alt="weather icon"/>
+            <img src={iconUrl} alt="weather icon"/>
             <p>{maxTemperature()}</p>
         </div>
     );
