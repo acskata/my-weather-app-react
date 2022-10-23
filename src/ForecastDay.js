@@ -28,7 +28,7 @@ export default function ForecastDay(props) {
     return (
         <div className="ForecastDay">
             <h3>{formatDays()}</h3>
-            <img src={iconUrl} alt="weather icon"/>
+            <img src={iconUrl} alt="weather icon" width="64px"/>
             <p>{maxTemperature()}</p>
         </div>
     );

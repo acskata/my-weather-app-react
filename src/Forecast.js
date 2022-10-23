@@ -19,7 +19,7 @@ export default function Forecast(props) {
     if (completed){
         return (
             <div className="Forecast">
-                <div className="row">
+                <div className="row gx-2">
                     <div className="col">
                         <ForecastDay data={forecastData[1]} />
                     </div>

@@ -15,9 +15,9 @@ export default function WeatherOverview(props) {
                 <li className="text-capitalize">{props.data.description}</li>
             </ul>
             </div>
-        <div className="row align-items-start">
+        <div className="row gx-2">
           <div className="col-2">
-            <img src={props.data.icon} alt="weather icon"/></div>
+            <img className="overviewIcon" src={props.data.icon} alt="weather icon" width="72px"/></div>
             <div className="col-4">
             <Temperature celsius={props.data.temperature}/></div>
           <div className="col-6">
